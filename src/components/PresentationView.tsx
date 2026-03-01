@@ -107,7 +107,8 @@ function SlideBlockView({ block, isActive }: { block: SlideBlock; isActive: bool
             />
           ) : block.localImage ? (
             <img 
-              src={block.localImage} 
+              // @ts-ignore
+              src={`${import.meta.env.BASE_URL || '/'}${block.localImage.substring(1)}`} 
               alt={block.imageCaption}
               className="max-w-full max-h-full object-contain rounded-2xl"
             />
