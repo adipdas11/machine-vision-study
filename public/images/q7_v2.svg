@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" style="background: white; font-family: sans-serif;">
+  <g transform="translate(100, 100)">
+    <text x="500" y="50" font-size="36" font-weight="bold" text-anchor="middle">Gaussian vs Box Filter (Frequency Domain)</text>
+    
+    <g transform="translate(0, 200)">
+      <text x="250" y="0" font-size="28" font-weight="bold" fill="#dc2626" text-anchor="middle">1. Box Filter Response</text>
+      <!-- Axis -->
+      <line x1="50" y1="300" x2="450" y2="300" stroke="black" stroke-width="2"/>
+      <!-- Sinc ringing wave -->
+      <path d="M 50 300 Q 150 400 200 300 Q 220 100 250 100 Q 280 100 300 300 Q 350 400 450 300" fill="none" stroke="#dc2626" stroke-width="4"/>
+      <circle cx="170" cy="330" r="15" fill="none" stroke="black" stroke-width="3"/>
+      <circle cx="330" cy="330" r="15" fill="none" stroke="black" stroke-width="3"/>
+      <text x="250" y="380" font-size="20" fill="#dc2626" font-weight="bold" text-anchor="middle">"Ringing" Artifacts (Sinc Wave)</text>
+    </g>
+    
+    <g transform="translate(500, 200)">
+      <text x="250" y="0" font-size="28" font-weight="bold" fill="#2563eb" text-anchor="middle">2. Gaussian Response</text>
+      <!-- Axis -->
+      <line x1="50" y1="300" x2="450" y2="300" stroke="black" stroke-width="2"/>
+      <!-- Bell ringing wave -->
+      <path d="M 50 300 Q 250 300 250 100 Q 250 300 450 300" fill="none" stroke="#2563eb" stroke-width="4"/>
+      <text x="250" y="380" font-size="20" fill="#2563eb" font-weight="bold" text-anchor="middle">Smooth decay (No Ringing)</text>
+    </g>
+
+    <text x="500" y="700" font-size="24" text-anchor="middle">A box filter averages uniformly, resulting in sharp cutoff frequencies leading to ringing artifacts.</text>
+    <text x="500" y="740" font-size="24" text-anchor="middle">Gaussian falls off smoothly across distance natively without abrupt transitions.</text>
+  </g>
+</svg>

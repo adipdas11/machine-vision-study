@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" style="background: white; font-family: sans-serif;">
+  <g transform="translate(100, 100)">
+    <text x="500" y="50" font-size="36" font-weight="bold" text-anchor="middle">Unsharp Masking (Image Sharpening)</text>
+    
+    <!-- Flowchart -->
+    <rect x="50" y="200" width="200" height="150" fill="#f3f4f6" stroke="#9ca3af" stroke-width="4" rx="10"/>
+    <text x="150" y="280" font-size="24" font-weight="bold" text-anchor="middle">Original</text>
+    <text x="150" y="310" font-size="24" font-weight="bold" text-anchor="middle">Image</text>
+    
+    <text x="320" y="285" font-size="48" font-weight="bold" text-anchor="middle">-</text>
+
+    <rect x="390" y="200" width="200" height="150" fill="#e0f2fe" stroke="#38bdf8" stroke-width="4" rx="10"/>
+    <text x="490" y="280" font-size="24" font-weight="bold" text-anchor="middle">Smoothed</text>
+    <text x="490" y="310" font-size="24" font-weight="bold" text-anchor="middle">(Blurred)</text>
+
+    <text x="660" y="285" font-size="48" font-weight="bold" text-anchor="middle">=</text>
+
+    <rect x="730" y="200" width="200" height="150" fill="#fef08a" stroke="#ca8a04" stroke-width="4" rx="10"/>
+    <text x="830" y="280" font-size="24" font-weight="bold" text-anchor="middle">Edge Map</text>
+    <text x="830" y="310" font-size="24" font-weight="bold" text-anchor="middle">(Details)</text>
+    
+    <!-- Step 2 -->
+    <path d="M 150 350 L 150 450 L 350 450" stroke="#9ca3af" stroke-width="4" fill="none"/>
+    <path d="M 830 350 L 830 450 L 550 450" stroke="#ca8a04" stroke-width="4" fill="none"/>
+    <text x="450" y="470" font-size="48" font-weight="bold" text-anchor="middle">+</text>
+    <path d="M 450 480 L 450 550" stroke="black" stroke-width="4" marker-end="url(#arrow)" fill="none"/>
+    
+    <rect x="350" y="550" width="200" height="150" fill="#dcfce7" stroke="#10b981" stroke-width="4" rx="10"/>
+    <text x="450" y="630" font-size="24" font-weight="bold" text-anchor="middle">Sharpened</text>
+    <text x="450" y="660" font-size="24" font-weight="bold" text-anchor="middle">Image</text>
+    
+  </g>
+</svg>

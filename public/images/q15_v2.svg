@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" style="background: white; font-family: sans-serif;">
+  <g transform="translate(100, 100)">
+    <text x="500" y="50" font-size="36" font-weight="bold" text-anchor="middle">Camera Intrinsic Parameters (Matrix K)</text>
+    
+    <!-- Matrix Box -->
+    <rect x="300" y="150" width="400" height="200" fill="#fef08a" stroke="#ca8a04" stroke-width="4" rx="15"/>
+    <text x="450" y="260" font-size="64" font-family="math" font-weight="bold" text-anchor="middle">K =</text>
+    <text x="550" y="210" font-size="48" font-family="math">[ f_x  s  c_x ]</text>
+    <text x="550" y="270" font-size="48" font-family="math">[  0  f_y  c_y ]</text>
+    <text x="550" y="330" font-size="48" font-family="math">[  0   0    1  ]</text>
+    
+    <!-- Explanation boxes -->
+    <g transform="translate(0, 450)">
+      <rect x="0" y="0" width="300" height="150" fill="#e0f2fe" stroke="#0284c7" stroke-width="2" rx="10"/>
+      <text x="150" y="40" font-size="24" font-weight="bold" fill="#0284c7" text-anchor="middle">Focal Length (fx, fy)</text>
+      <text x="150" y="80" font-size="18" text-anchor="middle">Distance between</text>
+      <text x="150" y="110" font-size="18" text-anchor="middle">optical center and</text>
+      <text x="150" y="140" font-size="18" text-anchor="middle">image plane (in pixels).</text>
+    </g>
+    
+    <g transform="translate(350, 450)">
+      <rect x="0" y="0" width="300" height="150" fill="#fce7f3" stroke="#db2777" stroke-width="2" rx="10"/>
+      <text x="150" y="40" font-size="24" font-weight="bold" fill="#db2777" text-anchor="middle">Principal Point (cx, cy)</text>
+      <text x="150" y="80" font-size="18" text-anchor="middle">Pixel coordinates where</text>
+      <text x="150" y="110" font-size="18" text-anchor="middle">the optical axis</text>
+      <text x="150" y="140" font-size="18" text-anchor="middle">intersects the image.</text>
+    </g>
+    
+    <g transform="translate(700, 450)">
+      <rect x="0" y="0" width="300" height="150" fill="#dcfce7" stroke="#16a34a" stroke-width="2" rx="10"/>
+      <text x="150" y="40" font-size="24" font-weight="bold" fill="#16a34a" text-anchor="middle">Skew (s)</text>
+      <text x="150" y="80" font-size="18" text-anchor="middle">Accounts for non-</text>
+      <text x="150" y="110" font-size="18" text-anchor="middle">orthogonality between</text>
+      <text x="150" y="140" font-size="18" text-anchor="middle">sensor axes.</text>
+    </g>
+    
+    <!-- Projection Equation -->
+    <rect x="200" y="650" width="600" height="100" fill="#f3f4f6" rx="10"/>
+    <text x="500" y="700" font-size="48" font-family="math" text-anchor="middle">P_2D = K [ R | t ] P_3D</text>
+    <text x="500" y="730" font-size="20" text-anchor="middle">Projects a 3D physical coordinate onto a 2D pixel plane.</text>
+  </g>
+</svg>

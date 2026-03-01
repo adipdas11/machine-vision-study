@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" style="background: white; font-family: sans-serif;">
+  <g transform="translate(100, 100)">
+    <text x="500" y="50" font-size="36" font-weight="bold" text-anchor="middle">Histogram Equalization</text>
+    
+    <g transform="translate(50, 200)">
+      <text x="200" y="0" font-size="24" font-weight="bold" fill="#6b7280" text-anchor="middle">Before (Poor Contrast, Clustered)</text>
+      <line x1="50" y1="350" x2="350" y2="350" stroke="black" stroke-width="3"/>
+      <line x1="50" y1="100" x2="50" y2="350" stroke="black" stroke-width="3"/>
+      <!-- Poor histogram bars clustered -->
+      <rect x="150" y="150" width="10" height="200" fill="#374151" />
+      <rect x="165" y="100" width="10" height="250" fill="#374151" />
+      <rect x="180" y="120" width="10" height="230" fill="#374151" />
+      <rect x="195" y="180" width="10" height="170" fill="#374151" />
+      <rect x="210" y="250" width="10" height="100" fill="#374151" />
+      <text x="200" y="380" font-size="20">Pixel Intensity (0 to 255)</text>
+    </g>
+    
+    <g transform="translate(650, 200)">
+      <text x="200" y="0" font-size="24" font-weight="bold" fill="#2563eb" text-anchor="middle">After Equalization (Flattens CDF)</text>
+      <line x1="50" y1="350" x2="350" y2="350" stroke="black" stroke-width="3"/>
+      <line x1="50" y1="100" x2="50" y2="350" stroke="black" stroke-width="3"/>
+      <!-- Spaced histogram bars -->
+      <rect x="80" y="250" width="10" height="100" fill="#2563eb" />
+      <rect x="120" y="200" width="10" height="150" fill="#2563eb" />
+      <rect x="180" y="150" width="10" height="200" fill="#2563eb" />
+      <rect x="240" y="180" width="10" height="170" fill="#2563eb" />
+      <rect x="300" y="220" width="10" height="130" fill="#2563eb" />
+      <text x="200" y="380" font-size="20">Pixel Intensity (0 to 255)</text>
+    </g>
+
+    <!-- Arrow -->
+    <path d="M 450 350 L 600 350" stroke="gray" stroke-width="10" stroke-dasharray="10"/>
+    <path d="M 580 330 L 620 350 L 580 370" fill="gray"/>
+    
+    <text x="500" y="700" font-size="22" text-anchor="middle">Equalization redistributes intensity clustering by mapping values to a more uniform distribution</text>
+    <text x="500" y="740" font-size="22" text-anchor="middle">which stretches the dynamic range out, heavily popping contrast details natively.</text>
+  </g>
+</svg>

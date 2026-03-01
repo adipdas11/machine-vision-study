@@ -1,0 +1,468 @@
+ 
+1 
+B31MV  –  Sample  interim  questions – Feb. 2025 
+ 
+Q1. Briefly answer the following questions: a) how does the human visual system perceives color? b) What 
+does the color mixing theory tells us? How do we use this theory to capture color images, display color images, 
+and print color images respectively? c) What are the three attributes of a color?     
+ 
+(a) The human being perceives color through different types of cones in the retina, sensitive to different parts 
+of  the  visible  spectrum,  corresponding  to  red,  green  and  blue  colors  primarily.  The  human  brain  fuses  the 
+received signals from these cones and    gives sensations of different colors depending on the combinations of 
+the responses from these cones.  
+ 
+(b)  The  color  mixing  theory  tells  us  that  any  color  can  be  obtained  by  mixing  three  primary  colors  in  an 
+appropriate proportion. To capture a color image, we use different sensors that are sensitive to each of three 
+primary colors; To display a color image , we excite three types of phosphors at each screen location that emits 
+three separate primary colors; To print a color image, we use three types of color inks. For capture and display, 
+we use primary colors for illuminating light sources, mainly red, gree   n and blue; For printing, we use primary 
+colors for reflecting ligh sources, namely cyan, magenta, and yellow.    
+ 
+(c) The three attributes of a color are: intensity (or luminance), hue and saturation.     
+ 
+Q2.  Consider a pinhole camera model with an image plane 1 meter from the center of projection. Suppose       
+we have a cube 1 meter on a side positioned so that the optical axis goes through the center of one edge and 
+out through the center of the diagonally opposite edge. The nearest edge is one meter from the center of 
+projection. Sketch the shape of the  projection, together with sufficient dimensional information to draw the 
+shape exactly.  
+ 
+In a pinhole camera model, the basic idea is that light from a scene passes through a small aperture (the pinhole) 
+and projects an inverted image onto a screen or image plane. The position and size of objects in the scene affect 
+how they are projected onto  the image plane.  
+In this case, let's consider a cube with one side parallel to the image plane. The cube is positioned so that the 
+optical axis (the line passing through the pinhole and perpendicular to the image plane) goes through the center 
+of one edge and out through t he center of the diagonally opposite edge. The nearest edge is one meter from the 
+center of projection.  
+Here's a simple textual description of the sketch:   
+1.   Draw a horizontal line to represent the image plane.   
+2.   Draw a point above the image plane to represent the center of projection.   
+3.   From the center  of projection, draw a line perpendicular to the image plane. This is the optical axis.    
+4.   Draw a cube with one side parallel to the image plane. The cube should be positioned so that the 
+optical axis passes through the center of one edge and out through the center of the diagonally 
+opposite edge.  
+5.   The nearest edge of the cube is one meter from the center of projection, so one corner of the cube 
+will be one meter away along the optical axis.   
+6.   Label the dimensions of the cube. Since the cube is 1 meter on each side and one corner is one meter 
+away along the optical axis, you can show these dimensions in your sketch.    
+Keep in mind that the cube's projection will be inverted on the image plane due to the nature of pinhole 
+camera projection.  
+ 
+ 
+ 
+ 
+----------------Page (0) Break----------------
+ 
+2 
+ 
+Q3.  What  is  k-nearest  neighbor  classification?  How  does  it  differ  from  nearest  neighbor  classification? 
+Describe a situation in which it might work better than nearest-neighbor classification. 
+ 
+K-Nearest Neighbor (KNN) classification is  a  type  of supervised learning algorithm used  for classification 
+tasks. In KNN classification, the class of a data point is determined by the class of the majority of its k nearest 
+neighbors in the feature space. KNN is a non-parametric algorithm, meaning it does not make any assumptions 
+about the underlying data distribution. 
+The primary difference between KNN and Nearest Neighbor lies in the number of neighbors considered. KNN 
+considers the majority class among the k nearest neighbors, providing a more robust decision-making process 
+by reducing the impact of noise or outliers. 
+Situations where KNN might work better than Nearest Neighbor Classification: 
+1.   Noise Reduction: 
+•     If the dataset contains outliers or noisy data points, using KNN with a higher value of k (e.g., 
+k=5 or k=10) can help reduce the impact of individual outliers. Nearest Neighbor, with k=1, 
+might be more susceptible to the influence of noise. 
+2.   Smoothing Effect: 
+•     KNN with larger k values  introduces a smoothing effect, making the model less sensitive to 
+local fluctuations in the data. This can be beneficial when dealing with datasets where there is 
+variability in the class labels of nearby points. 
+3.   Improved Generalization: 
+•     KNN with an appropriate value of k can provide better generalization to unseen data compared 
+to  Nearest  Neighbor.  A  balanced  choice  of  k  helps  in  making  decisions  based  on  a  more 
+representative neighborhood rather than relying on a single nearest neighbor. 
+ 
+Q4.  In  what  situations  is  it  useful  to  apply  a  smoothing  operation  to  an  image? Compare  averaging  and 
+median filtering as methods of smoothing.  What are the advantages  and disadvantages  of each? 
+ 
+Smoothing operations, also known as image filtering or blurring, are    commonly applied to images for various 
+purposes. Here are some situations in which it is useful to apply a smoothing operation:     
+1.   Noise Reduction:  
+•     Situation:   Images  captured  by  cameras  or  generated  through  various  processes  often  contain 
+unwanted noise, such as sensor noise, compression artifacts, or random fluctuations.     
+•     Usefulness:   Smoothing  helps  reduce  noise  and  makes  the  image  visually  cleaner  and  more 
+aesthetically pleasing.  
+2.   Edge Preservation:  
+•     Situation:   In certain applications, preserving edges while reducing noise is essential, such as in 
+medical imaging or computer vision tasks.   
+•     Usefulness:   Smoothing  methods  can  be  designed  to  reduce  noise  while  maintaining  important 
+edges and details in the image.  
+3.   Preprocessing for Computer Vision:  
+•     Situation:  Before performing image analysis tasks like object detection or recognition, it is often 
+beneficial  to  preprocess  images  by  smoothing  to  enhance  the  effectiveness  of  subsequent 
+algorithms.  
+•     Usefulness:   Smoothing  can  help  simplify  image  structures  and  improve  the  performance  of 
+algorithms by removing unnecessary details.   
+Now, let's compare two common methods of image smoothing: averaging and median filtering.     
+ 
+Averaging Filtering:  
+•     Advantages:  
+•     Simple to implement.  
+----------------Page (1) Break----------------
+ 
+3 
+•     Effective for reducing random noise. 
+•     Preserves global image structure. 
+•     Disadvantages: 
+•     May blur edges and details, as it applies a uniform smoothing kernel to the entire image. 
+•     Less effective in the presence of impulse or salt-and-pepper noise. 
+ 
+Median Filtering: 
+•     Advantages: 
+•     Effective for removing impulse noise (salt-and-pepper noise) without blurring edges. 
+•     Preserves edges and fine details better than averaging. 
+•     Disadvantages: 
+•     More computationally expensive compared to averaging, especially for larger kernel sizes. 
+•     Less effective for reducing random noise. 
+In summary, the choice between averaging and median filtering depends on the specific characteristics of the 
+noise and the requirements of the application. Averaging is simple and effective for reducing random noise but 
+may blur edges,  while median filtering is better at preserving edges and handling impulse noise but can be 
+computationally more expensive. Often, a combination of filtering techniques or adaptive methods is used to 
+achieve the desired balance between noise reduction and preservation of important image features. 
+ 
+Q5. What are some ways that matching is employed in computer vision, and why is it often a hard problem? 
+ 
+Matching plays a crucial role in various tasks in computer vision, where the goal is to find  correspondences 
+between objects, features, or patterns in different images. Some common ways that matching is employed in 
+computer vision include: 
+ 
+Feature  Matching:  Feature  matching  involves  identifying  and  matching  distinctive  keypoints  or  features 
+between  images.  This  is  commonly  used  in  tasks  such  as  image  alignment,  object  recognition,  and  image 
+stitching. 
+ 
+Template Matching: Template matching involves comparing a template (a small image patch) with regions of 
+an image to find occurrences of the template. It is often used for object detection and localization in images. 
+ 
+Object Detection and Recognition: Matching is used to detect and recognize objects in images by comparing 
+them to known object models or templates. This includes tasks such as face recognition, object tracking, and 
+scene understanding. 
+ 
+Stereo Matching: Stereo matching involves finding corresponding points in stereo image pairs captured from 
+different viewpoints. It is used to reconstruct 3D depth information and generate depth maps for tasks such as 
+3D scene reconstruction and depth estimation. 
+ 
+Shape Matching: Shape matching involves comparing the shapes of objects in images to determine similarities 
+or  differences.  It  is  used  in  tasks  such  as  shape  recognition,  shape-based  object  detection,  and  contour 
+matching. 
+ 
+Q6. What are the advantages of using homogeneous coordinates in image transformation? Give an example. 
+ 
+Homogeneous coordinates offer several advantages in image transformation tasks,  particularly in computer 
+graphics and computer vision. Some of these advantages include: 
+Uniform Representation: Homogeneous coordinates provide a unified representation for points, vectors, and 
+transformations  in  a  projective  space.  This  simplifies  mathematical  operations  and  algorithms  by  treating 
+translations, rotations, scaling, and perspective transformations uniformly. 
+Simplifies Translation: In Cartesian coordinates, translation involves adding fixed coordinates to every point, 
+which can be cumbersome and inefficient. Homogeneous coordinates allow translation to be represented as 
+matrix multiplication, simplifying the math and making it more consistent with other transformations. 
+----------------Page (2) Break----------------
+ 
+4 
+ 
+Q7. Why is a Gaussian filter preferred to a box filter? 
+ 
+A box filter often leads to image artifacts called ringing. The Gaussian filter does not do that. 
+Smoothing Effect: A Gaussian filter provides a smoother and more natural-looking result compared to a box 
+filter.  This  is  because  the  Gaussian  filter  applies  a  weighted  average  to  neighboring  pixels  based  on  their 
+distance from the center, resulting in a more gradual and visually pleasing blur. In contrast, a box filter applies 
+a uniform average to neighboring pixels, which can lead to abrupt transitions and noticeable artifacts in the 
+smoothed image. 
+ 
+Q8. What do you do to sharpen an image? 
+ 
+Scale the  intensities of an image by 2 and  then  subtract from the  result a  smoothed  version of the  original 
+image. Essentially, apply an impulse filter of amplitude 2, separately apply an averaging filter and subtract this 
+from the former. 
+To sharpen an image, you can apply a sharpening filter or kernel to enhance the contrast of edges and fine 
+details in the image. There are various techniques for image sharpening, but one common approach is to use a 
+sharpening filter such as the Laplacian or unsharp mask filter. Here's how you can sharpen an image using the 
+unsharp mask filter: 
+1.   Convert the Image to Grayscale (Optional): If your image is in color, you may choose to convert it 
+to grayscale before applying the sharpening filter. This simplifies the sharpening process and reduces 
+computational complexity. 
+2.   Apply a Gaussian Blur: Start by applying a Gaussian blur to the image to smooth out noise and small 
+details. This step helps create a "blurred" version of the image, which will be used to enhance edges 
+and fine details in the next step. 
+3.   Subtract the Blurred Image from the Original Image: Subtract the blurred image from the original 
+image to obtain an "edge map" that highlights the differences between neighboring pixels. This step 
+enhances the contrast of edges and fine details in the image. 
+ 
+Q9. (a) State briefly how we can detect corners in an image. (b) List the main 3-5 steps of the Canny edge 
+detector and SIFT algorithm. 
+ 
+(a) Corner detection is a fundamental technique in computer vision used to identify and localize corners or 
+interest points in an image. These corners typically represent significant changes in intensity or gradients and 
+are often associated with edges, corners, or junctions of objects in the scene. Here's a brief overview of how 
+corner detection can be performed in an image: 
+1.   Gradient Calculation: Compute the gradients of the image using gradient operators such as the Sobel 
+or  Scharr  operators.  Gradients  highlight  regions  with  significant  intensity  changes,  which  often 
+correspond to edges and corners. 
+2.   Gradient Magnitude and Orientation: Calculate the magnitude and orientation of the gradients at 
+each pixel. The magnitude represents the strength of the gradient, while the orientation indicates the 
+direction of the gradient. 
+3.   Structure Tensor: Compute the structure tensor for each pixel in the image. The structure tensor is a 
+matrix that summarizes the local gradient information around each pixel and is used to characterize 
+the local structure of the image. 
+4.   Corner Response Function: Use the structure tensor to compute a corner response function, which 
+measures the likelihood of a pixel being part of a corner. Common corner response functions include 
+the Harris corner detector and the Shi-Tomasi corner detector. These functions typically consider the 
+eigenvalues of the structure tensor to quantify cornerness. 
+5.   Thresholding: Apply a threshold to the corner response function to identify pixels with sufficiently 
+high  corner  scores.  This  thresholding  step  helps  distinguish  corners  from  noise  and  low-contrast 
+----------------Page (3) Break----------------
+ 
+5 
+regions in the image. 
+6.   Non-maximum  Suppression:  Perform  non-maximum  suppression  to  localize  the  detected  corners 
+accurately. This involves suppressing non-maximum responses in local neighborhoods to retain only 
+the strongest corner candidates. 
+7.   Localization  and  Refinement:  Optionally,  refine  the  localization  of  corner  points  using  sub-pixel 
+accuracy techniques such as interpolation or least squares fitting. This step improves the precision of 
+corner localization and makes the detected corners more suitable for subsequent tasks such as feature 
+matching or object tracking. 
+ 
+(b) 
+(a) Filter the image I with the derivatives of Gaussians: IGx and IGy. 
+(b) Find the magnitude and the orientation of the image gradient. 
+(c) Find locations in the image where the magnitude of the gradient is above a threshold. 
+(d) Perform non-maximum suppression to thin fat edges. 
+(e) Perform the hysteresis thresholding to complete edges.  
+ 
+The Scale-Invariant Feature Transform (SIFT) algorithm is a widely used method for detecting and describing 
+local features in images. Here are the main steps of the SIFT algorithm: 
+1.   Scale-space Extrema Detection: 
+•     Construct a scale-space representation of the input image by applying Gaussian blurring and 
+downsampling (octave decomposition). 
+•     Detect potential interest points or keypoints at different scales by searching for local extrema 
+in the scale-space space. 
+2.   Keypoint Localization: 
+•     Refine the location and scale of keypoints to sub -pixel accuracy using the Taylor expansion 
+of the scale-space function. 
+•     Eliminate  keypoints  with  low  contrast  or  poorly  localized  keypoints  by  comparing  their 
+intensity with neighboring pixels and applying a threshold. 
+3.   Orientation Assignment: 
+•     Assign an orientation to each keypoint based on the local gradient directions computed from 
+the image gradients. 
+•     Construct a histogram of gradient orientations in the local neighborhood of each keypoint. 
+•     Select the dominant orientation(s) from the histogram as the orientation(s) of the keypoint. 
+4.   Descriptor Calculation: 
+•     Compute a descriptor for each keypoint to describe its appearance and local image structure. 
+•     Define a local image patch (e.g., 16x16 or 8x8 pixels) around each keypoint location. 
+•     Compute gradient magnitude and orientation for each pixel in the patch. 
+•     Construct  a  histogram  of  gradient  orientations  within  the  patch,  weighted  by  gradient 
+magnitude. 
+•     Normalize the histogram to ensure invariance to changes in illumination and contrast. 
+•     Concatenate the normalized histograms to form the final descriptor vector for the keypoint. 
+5.   Keypoint Matching (Optional): 
+•     Match keypoints between different images by comparing their descriptors. 
+•     Use distance metrics such as Euclidean distance or normalized cross  -correlation to measure 
+the similarity between descriptors. 
+•     Apply  nearest-neighbor  matching  or  a  more  sophisticated  matching  strategy  (e.g.,  nearest-
+neighbor ratio test) to establish correspondences between keypoints in different images. 
+•      
+These  steps  collectively  enable  the  SIFT  algorithm  to  detect  distinctive  keypoints  and  describe  their  local 
+appearance  in  a  scale-invariant  and  robust  manner,  making  it  widely  used  in  various  computer  vision 
+applications such as object recognition, image stitching, and 3D reconstruction. 
+ 
+ 
+ 
+ 
+ 
+----------------Page (4) Break----------------
+ 
+6 
+Q10. How many parameters (or degrees of freedom) are there in a 2D affine model? 
+In a 2D affine transformation model, there are 6 parameters or degrees of freedom. These parameters define 
+the  transformation  matrix  that  maps  points  from  one  2D  coordinate  system  to  another.  The  2D  affine 
+transformation matrix typically has the following form: 
+ 
+Where: 
+•     a and d represent scaling factors in the x and y directions, respectively. 
+•     b and c represent shearing factors in the x and y directions, respectively. 
+•     tx and ty represent translations in the x and y directions, respectively. 
+Each parameter in the transformation matrix contributes one degree of freedom, giving a total of 6 
+parameters. These parameters define how the transformation affects the position, orientation, scale, and 
+shearing of objects in the 2D space. 
+ 
+Q11. For each filter given below, answer the following questions. a) Is it a separable filter? If yes, present 
+the horizontal and vertical filters. b) What is the functionality of the filter? Explain your reasoning. 
+ 
+ 
+H_1: non-separable, high emphasis because coefficients sum to 1, but has both positive and  
+negative values 
+ 
+H_2:  
+smoothing, vertically edge de   on to detect horizontal edges.  
+ 
+ 
+Q12. What is overfitting in the context of neural networks? Describe three techniques to prevent overfitting. 
+                                                                                                         
+Overfitting: 
+Overfitting occurs when a model learns the training data too well, including noise and outliers, resulting in 
+poor generalization to unseen data. 
+ 
+Techniques to Prevent Overfitting: 
+Data Augmentation: Increase dataset size by applying transformations (e.g., rotation, scaling). 
+Regularization: Add a penalty term (e.g., L2 regularization) to the loss function to discourage large weights. 
+ 
+ 
+ 
+Q13. Describe the three main categories of Machine Learning and their subtypes and give example algorithms 
+and applications for each of them. 
+ 
+----------------Page (5) Break----------------
+ 
+7 
+Machine learning can be  broadly categorized into three main categories: supervised learning, unsupervised 
+learning, and reinforcement learning. Here's a description of each category along with their subtypes, example 
+algorithms, and applications: 
+ 
+Supervised Learning: 
+Description: In supervised learning, the algorithm learns from labeled data, where each example in the training 
+dataset is associated with a corresponding target or label. The goal is to learn a mapping from input features to 
+output labels. 
+Subtypes: 
+Classification: The output variable is categorical, and the algorithm learns to classify input data into predefined 
+classes or categories. 
+Regression: The output variable is continuous, and the algorithm learns to predict a numerical value based on 
+input features. 
+ 
+Example Algorithms: 
+Classification: Support Vector Machines (SVM), Decision Trees, Random Forest, Logistic Regression, Neural 
+Networks. 
+Regression:  Linear  Regression,  Ridge  Regression,  Lasso  Regression,  Support  Vector  Regression  (SVR), 
+Gradient Boosting Machines (GBM). 
+ 
+Applications: 
+Classification:  Email  spam  detection,  sentiment  analysis,  image  classification,  medical  diagnosis,  fraud 
+detection. 
+Regression: Stock price prediction, housing price prediction, demand forecasting, weather forecasting, sales 
+forecasting. 
+ 
+Unsupervised Learning: 
+Description:  In  unsupervised  learning,  the  algorithm  learns  from  unlabeled  data,  where  there  are  no  target 
+labels associated with the input examples. The goal is to uncover hidden patterns, structures, or relationships 
+in the data. 
+ 
+Subtypes: 
+Clustering: The algorithm groups similar data points together into clusters or segments based on their inherent 
+characteristics or features. 
+Dimensionality  Reduction:  The  algorithm  reduces  the  number  of  input  features  by  extracting  the  most 
+important features or representations from the data. 
+ 
+Example Algorithms: 
+Clustering: K-means clustering, Hierarchical clustering, DBSCAN, Gaussian Mixture Models (GMM). 
+Dimensionality   Reduction:   Principal   Component   Analysis   (PCA),   t-distributed   Stochastic   Neighbor 
+Embedding (t-SNE), Autoencoders. 
+Applications: 
+Clustering: Customer segmentation, market basket analysis, image segmentation, anomaly detection. 
+Dimensionality Reduction: Visualization of high -dimensional data, feature extraction for downstream tasks, 
+compression of data. 
+ 
+Reinforcement Learning: 
+Description: In reinforcement learning, the algorithm learns to make sequential decisions by interacting with 
+an environment. The algorithm receives feedback in the form of rewards or penalties based on its actions, and 
+the goal is to learn a policy that maximizes cumulative rewards over time. 
+ 
+Subtypes: 
+Model-based RL: The algorithm learns an explicit model of the environment dynamics (transition probabilities 
+and rewards) and uses it to make decisions. 
+Model-free RL: The algorithm learns a policy or value function directly from interactions with the environment 
+without explicitly modeling the environment dynamics. 
+ 
+----------------Page (6) Break----------------
+ 
+8 
+Example Algorithms: 
+Model-based RL: Dynamic Programming, Monte Carlo Tree Search (MCTS). 
+Model-free RL: Q-learning, Deep Q-Networks (DQN), Policy Gradient methods, Actor-Critic methods. 
+ 
+Applications: 
+Game playing (e.g., AlphaGo), robotics control, autonomous driving, recommendation systems, finance (e.g., 
+algorithmic trading). 
+ 
+Q14. Describe in detail how you would use the linear Support Vector Machine (SVM) to classify two classes 
+that are not linearly separable. 
+ 
+When dealing with two classes that are not linearly separable, linear Support Vector Machine (SVM) alone 
+may not be sufficient for accurate classification. However, SVM can still be used effectively by employing 
+techniques  such  as  kernel  methods  or  incorporating  additional  steps  to  handle  non-linear  separability.  One 
+common  approach  is  to  map  the  input  data  into  a  higher-dimensional  space  where  the  classes  become 
+separable, either by using non-linear kernels or by feature transformation. 
+In cases where  the  classes are imbalanced,  additional techniques such as class weighting, oversampling, or 
+undersampling may be applied to improve the classifier's performance. 
+ 
+Q15. What are intrinsic camera parameters? 
+Intrinsic  camera  parameters  are  a  set  of  parameters  that  describe  the  internal  geometric  properties  and 
+characteristics of a camera system. These parameters define how the camera projects a 3D scene onto a 2D 
+image plane. Intrinsic parameters remain constant for a given camera and are typically determined during the 
+camera calibration process. The main intrinsic camera parameters include: 
+Focal Length (fx, fy): The focal length is the distance between the camera's optical center (or principal point) 
+and the image plane, measured in millimeters. It determines the magnification of the camera and affects the 
+field of view and perspective distortion in the captured   images. 
+Principal Point (cx, cy): The principal point is the image coordinates (in pixels) of the camera's optical center, 
+where the optical axis intersects the image plane. It represents the center of the image and affects the alignment 
+of the image coordinates with the physical world.  
+Skew ( s): The skew parameter accounts for any non -orthogonality between the image axes (x and y) due to 
+manufacturing  imperfections  or  misalignment  in  the  camera  system. It  is  typically  close  to  zero  for  most 
+cameras and is often ignored in practice. 
+The intrinsic parameters are represented in the camera intrinsic matrix K: 
+ 
+ 
+Q16. Consider a perfect perspective projection camera with focal length 24 mm and a CCD array of size 16  
+mm×12 mm, containing 500×500 pixels. Field of View (FOV) is defined as the angle between two points at 
+opposite  edges of the image  (CCD  array), either  horizontally   or vertically.   Thus  there  are two   FOVs,  one 
+----------------Page (7) Break----------------
+ 
+9 
+horizontal and one vertical. Assuming the image center is the center of the image, then FOV is twice the 
+angle between the optical axis and one edge of the image. 
+1. Give a general expression for computing FOV from focal length and image width. 
+2. Compute the horizontal FOV and vertical FOV of the given camera. 
+3. Comment on how FOV affects resolution  in an image. 
+4. Give an expression for computing the pixel coordinates  of a point in a 3D scene that is given in 
+camera-frame coordinates. Assume the upper -left corner pixel is (0,0).  
+5. Compute the pixel where a scene point at coordinates (12m,7m,103m) is imaged. 
+ 
+Solution 
+ 
+ 
+ 
+Q17. Explain the purpose of Gaussian smoothing in image processing. How does the choice of the kernel size 
+and standard deviation (σ) affect the output? 
+Purpose of Gaussian Smoothing: Gaussian smoothing is used to reduce noise and detail in an image by blurring 
+it. It is particularly effective for removing high-frequency noise while preserving edges and structures. 
+Effect of Kernel Size and σ: 
+- Kernel Size: A larger kernel size results in more blurring, as it averages over a larger neighborhood of pixels. 
+- Standard Deviation (σ): A larger σ spreads the smoothing effect over a wider area, resulting in a more blurred 
+image. A smaller σ retains more details. 
+ 
+ 
+----------------Page (8) Break----------------
+ 
+10 
+ 
+Q18. What is the purpose of a histogram equalization in image processing? 
+Histogram  equalization  is  a  technique  used  in  image  processing  to  enhance  contrast  by  redistributing  the 
+intensity  values  of  an  image.  It  works  by  computing  the  cumulative  distribution  function  (CDF)  of  pixel 
+intensities and mapping the original values to  a more uniform distribution, effectively spreading out frequent 
+intensity levels. This improves visibility in images with poor contrast, making details in dark or bright regions 
+more distinguishable.  
+In  image  processing,  histogram  equalization  adjusts  the  intensity  distribution  of  an  image  to  enhance  its 
+contrast. It works by redistributing pixel intensities so that they occupy the full available range, making dark 
+regions brighter and bright regions d arker if necessary. This process flattens the histogram, ensuring a more 
+uniform distribution of intensity values. The importance of this  lies in improving image  quality by making 
+features more distinguishable, reducing loss of detail in underexposed or ov  erexposed areas, and enhancing 
+the  dynamic  range.  It  is  particularly  useful  in  preprocessing  steps  for  tasks  like  edge  detection,  object 
+recognition, and segmentation, where well-balanced contrast improves accuracy. 
+The method is widely used in applications such as medical imaging, remote sensing, and facial recognition, 
+where  enhanced  contrast  helps  in  feature  extraction  and  analysis,  ensuring  better  visual  clarity  and 
+normalization across varying lighting conditions. 
+ 
+----------------Page (9) Break----------------

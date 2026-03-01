@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" style="background: white; font-family: sans-serif;">
+  <g transform="translate(100, 100)">
+    <text x="500" y="50" font-size="36" font-weight="bold" text-anchor="middle">Field of View (FOV) Geometry</text>
+    
+    <g transform="translate(450, 400)">
+      <!-- Central Axis -->
+      <line x1="-300" y1="0" x2="400" y2="0" stroke="black" stroke-dasharray="10" stroke-width="2"/>
+      
+      <!-- Sensor Plane -->
+      <line x1="-200" y1="-150" x2="-200" y2="150" stroke="red" stroke-width="6"/>
+      <text x="-200" y="180" font-size="20" fill="red" text-anchor="middle">CCD Sensor (Width = w)</text>
+      <!-- Arrows for w -->
+      <path d="M -220 -150 L -220 150" stroke="gray" stroke-width="2" marker-start="url(#arrow)" marker-end="url(#arrow)"/>
+      <text x="-240" y="0" font-size="20" fill="gray" transform="rotate(-90, -240, 0)" text-anchor="middle">w = 16mm</text>
+      
+      <!-- Lens Pinhole -->
+      <circle cx="0" cy="0" r="10" fill="blue"/>
+      <text x="0" y="30" font-size="20" fill="blue" text-anchor="middle">Lens</text>
+      
+      <!-- Focal length -->
+      <line x1="-200" y1="-20" x2="0" y2="-20" stroke="green" stroke-width="3"/>
+      <text x="-100" y="-30" font-size="20" fill="green" text-anchor="middle">f = 24mm</text>
+      
+      <!-- FOV Rays -->
+      <line x1="-200" y1="-150" x2="300" y2="225" stroke="purple" stroke-width="3"/>
+      <line x1="-200" y1="150" x2="300" y2="-225" stroke="purple" stroke-width="3"/>
+      
+      <!-- Angle Arc -->
+      <path d="M 100 -75 A 120 120 0 0 1 100 75" fill="none" stroke="purple" stroke-width="4"/>
+      <text x="140" y="5" font-size="24" fill="purple" font-weight="bold">FOV = 36.87°</text>
+      
+      <!-- Formula -->
+      <rect x="150" y="250" width="300" height="100" fill="#f3f4f6" rx="10"/>
+      <text x="300" y="290" font-size="24" font-weight="bold" text-anchor="middle">FOV = 2 × arctan(w / 2f)</text>
+      <text x="300" y="330" font-size="18" text-anchor="middle">Pixels spread over larger area = lower res</text>
+    </g>
+  </g>
+</svg>
