@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" style="background: white; font-family: sans-serif;">
+  <g transform="translate(100, 100)">
+    <text x="500" y="50" font-size="36" font-weight="bold" text-anchor="middle">2D Affine Models (6 Degrees of Freedom)</text>
+    
+    <rect x="250" y="150" width="500" height="150" fill="#fef08a" stroke="#ca8a04" stroke-width="4" rx="10"/>
+    <text x="500" y="230" font-size="48" font-family="math" font-weight="bold" text-anchor="middle">A = [ a  b  tx ]</text>
+    <text x="500" y="270" font-size="48" font-family="math" font-weight="bold" text-anchor="middle">    [ c  d  ty ]</text>
+
+    <!-- Scale -->
+    <g transform="translate(50, 400)">
+      <rect x="0" y="0" width="200" height="200" fill="#e0f2fe" stroke="#0284c7" stroke-width="2" rx="5"/>
+      <text x="100" y="40" font-size="24" font-weight="bold" fill="#0284c7" text-anchor="middle">Scaling (a, d)</text>
+      <rect x="50" y="80" width="50" height="50" fill="#38bdf8" />
+      <path d="M 110 105 L 140 105 L 130 95 M 140 105 L 130 115" stroke="black" stroke-width="2" fill="none"/>
+      <rect x="150" y="60" width="30" height="90" fill="#0ea5e9" />
+    </g>
+    
+    <!-- Shear -->
+    <g transform="translate(300, 400)">
+      <rect x="0" y="0" width="200" height="200" fill="#fce7f3" stroke="#db2777" stroke-width="2" rx="5"/>
+      <text x="100" y="40" font-size="24" font-weight="bold" fill="#db2777" text-anchor="middle">Shear (b, c)</text>
+      <rect x="50" y="80" width="50" height="50" fill="#f472b6" />
+      <path d="M 110 105 L 140 105 L 130 95 M 140 105 L 130 115" stroke="black" stroke-width="2" fill="none"/>
+      <polygon points="150,130 180,130 190,70 160,70" fill="#db2777" />
+    </g>
+    
+    <!-- Translate -->
+    <g transform="translate(550, 400)">
+      <rect x="0" y="0" width="200" height="200" fill="#dcfce7" stroke="#16a34a" stroke-width="2" rx="5"/>
+      <text x="100" y="40" font-size="24" font-weight="bold" fill="#16a34a" text-anchor="middle">Translate (tx, ty)</text>
+      <rect x="50" y="80" width="40" height="40" fill="#4ade80" />
+      <path d="M 95 100 L 125 70 M 125 70 L 115 70 M 125 70 L 125 80" stroke="black" stroke-width="2" fill="none"/>
+      <rect x="130" y="40" width="40" height="40" fill="#16a34a" />
+    </g>
+
+    <!-- Rotate (which is a mix of scale and shear math) -->
+    <g transform="translate(800, 400)">
+      <rect x="0" y="0" width="200" height="200" fill="#f3f4f6" stroke="#6b7280" stroke-width="2" rx="5"/>
+      <text x="100" y="40" font-size="24" font-weight="bold" fill="#4b5563" text-anchor="middle">Rotation</text>
+      <text x="100" y="60" font-size="14" fill="#4b5563" text-anchor="middle">(Achieved via a,b,c,d)</text>
+      <rect x="80" y="90" width="40" height="40" fill="#9ca3af" transform="rotate(45, 100, 110)" />
+    </g>
+
+  </g>
+</svg>

@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" style="background: white; font-family: sans-serif;">
+  <g transform="translate(50, 100)">
+    <text x="550" y="50" font-size="36" font-weight="bold" text-anchor="middle">Filter Kernels &amp; Separability</text>
+    
+    <!-- Filter H1 -->
+    <g transform="translate(100, 200)">
+      <text x="200" y="0" font-size="32" font-weight="bold" text-anchor="middle">Filter H1 (Non-Separable)</text>
+      <rect x="50" y="50" width="300" height="300" fill="#fef08a" stroke="#ca8a04" stroke-width="4" rx="10"/>
+      <!-- Grid -->
+      <line x1="150" y1="50" x2="150" y2="350" stroke="#ca8a04" stroke-width="2"/>
+      <line x1="250" y1="50" x2="250" y2="350" stroke="#ca8a04" stroke-width="2"/>
+      <line x1="50" y1="150" x2="350" y2="150" stroke="#ca8a04" stroke-width="2"/>
+      <line x1="50" y1="250" x2="350" y2="250" stroke="#ca8a04" stroke-width="2"/>
+      
+      <!-- Numbers -->
+      <text x="100" y="115" font-size="32" font-family="math" text-anchor="middle">-1</text>
+      <text x="200" y="115" font-size="32" font-family="math" text-anchor="middle">-1</text>
+      <text x="300" y="115" font-size="32" font-family="math" text-anchor="middle">-1</text>
+      
+      <text x="100" y="215" font-size="32" font-family="math" text-anchor="middle">-1</text>
+      <text x="200" y="215" font-size="32" font-family="math" font-weight="bold" fill="#dc2626" text-anchor="middle"> 9</text>
+      <text x="300" y="215" font-size="32" font-family="math" text-anchor="middle">-1</text>
+      
+      <text x="100" y="315" font-size="32" font-family="math" text-anchor="middle">-1</text>
+      <text x="200" y="315" font-size="32" font-family="math" text-anchor="middle">-1</text>
+      <text x="300" y="315" font-size="32" font-family="math" text-anchor="middle">-1</text>
+      
+      <text x="200" y="420" font-size="20" font-weight="bold" text-anchor="middle">High-Emphasis Filter</text>
+      <text x="200" y="450" font-size="18" text-anchor="middle">(Sums to 1, aggressive values)</text>
+    </g>
+
+    <!-- Filter H2 -->
+    <g transform="translate(600, 200)">
+      <text x="200" y="0" font-size="32" font-weight="bold" text-anchor="middle">Filter H2 (Separable Edge Detector)</text>
+      <rect x="50" y="50" width="300" height="300" fill="#e0f2fe" stroke="#0284c7" stroke-width="4" rx="10"/>
+      <!-- Grid -->
+      <line x1="150" y1="50" x2="150" y2="350" stroke="#0284c7" stroke-width="2"/>
+      <line x1="250" y1="50" x2="250" y2="350" stroke="#0284c7" stroke-width="2"/>
+      <line x1="50" y1="150" x2="350" y2="150" stroke="#0284c7" stroke-width="2"/>
+      <line x1="50" y1="250" x2="350" y2="250" stroke="#0284c7" stroke-width="2"/>
+      
+      <!-- Numbers -->
+      <text x="100" y="115" font-size="32" font-family="math" text-anchor="middle">1</text>
+      <text x="200" y="115" font-size="32" font-family="math" text-anchor="middle">2</text>
+      <text x="300" y="115" font-size="32" font-family="math" text-anchor="middle">1</text>
+      
+      <text x="100" y="215" font-size="32" font-family="math" text-anchor="middle">0</text>
+      <text x="200" y="215" font-size="32" font-family="math" font-weight="bold" fill="#2563eb" text-anchor="middle">0</text>
+      <text x="300" y="215" font-size="32" font-family="math" text-anchor="middle">0</text>
+      
+      <text x="100" y="315" font-size="32" font-family="math" text-anchor="middle">-1</text>
+      <text x="200" y="315" font-size="32" font-family="math" text-anchor="middle">-2</text>
+      <text x="300" y="315" font-size="32" font-family="math" text-anchor="middle">-1</text>
+      
+      <text x="200" y="420" font-size="20" font-weight="bold" text-anchor="middle">Horizontal Edge Detector</text>
+      <text x="200" y="450" font-size="18" text-anchor="middle">(Sobel-like matrix)</text>
+    </g>
+  </g>
+</svg>

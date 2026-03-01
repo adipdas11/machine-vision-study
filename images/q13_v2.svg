@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" style="background: white; font-family: sans-serif;">
+  <g transform="translate(100, 100)">
+    <text x="500" y="50" font-size="36" font-weight="bold" text-anchor="middle">Types of Machine Learning</text>
+    
+    <rect x="0" y="200" width="300" height="300" fill="#e0f2fe" stroke="#0284c7" stroke-width="4" rx="10"/>
+    <text x="150" y="250" font-size="28" font-weight="bold" fill="#0284c7" text-anchor="middle">Supervised</text>
+    <text x="150" y="280" font-size="18" text-anchor="middle">Training on LABELED data</text>
+    <rect x="50" y="320" width="200" height="150" fill="white" stroke="#0ea5e9" stroke-width="2" rx="5"/>
+    <text x="150" y="360" font-size="18" text-anchor="middle">• Classification (SVM)</text>
+    <text x="150" y="390" font-size="18" text-anchor="middle">• Regression</text>
+    <text x="150" y="430" font-size="18" font-weight="bold" text-anchor="middle">Target mapping</text>
+
+    <rect x="350" y="200" width="300" height="300" fill="#fce7f3" stroke="#db2777" stroke-width="4" rx="10"/>
+    <text x="500" y="250" font-size="28" font-weight="bold" fill="#db2777" text-anchor="middle">Unsupervised</text>
+    <text x="500" y="280" font-size="18" text-anchor="middle">Uncovers patterns in UNLABELED data</text>
+    <rect x="400" y="320" width="200" height="150" fill="white" stroke="#f472b6" stroke-width="2" rx="5"/>
+    <text x="500" y="360" font-size="18" text-anchor="middle">• Clustering (K-Means)</text>
+    <text x="500" y="390" font-size="18" text-anchor="middle">• Dimensional Reduction</text>
+    <text x="500" y="430" font-size="18" font-weight="bold" text-anchor="middle">Feature discovery</text>
+    
+    <rect x="700" y="200" width="300" height="300" fill="#dcfce7" stroke="#16a34a" stroke-width="4" rx="10"/>
+    <text x="850" y="250" font-size="28" font-weight="bold" fill="#16a34a" text-anchor="middle">Reinforcement</text>
+    <text x="850" y="280" font-size="18" text-anchor="middle">Learns via Rewards &amp; Penalties</text>
+    <rect x="750" y="320" width="200" height="150" fill="white" stroke="#4ade80" stroke-width="2" rx="5"/>
+    <text x="850" y="360" font-size="18" text-anchor="middle">• Q-Learning</text>
+    <text x="850" y="390" font-size="18" text-anchor="middle">• AlphaGo / Robotics</text>
+    <text x="850" y="430" font-size="18" font-weight="bold" text-anchor="middle">Interactive environment</text>
+  </g>
+</svg>

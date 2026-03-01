@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" style="background: white; font-family: sans-serif;">
+  <g transform="translate(50, 50)">
+    <text x="550" y="50" font-size="36" font-weight="bold" text-anchor="middle">Image Smoothing Techniques</text>
+    
+    <!-- Table -->
+    <rect x="100" y="150" width="900" height="500" rx="10" fill="none" stroke="#d1d5db" stroke-width="4"/>
+    <line x1="100" y1="250" x2="1000" y2="250" stroke="#d1d5db" stroke-width="4"/>
+    <line x1="400" y1="150" x2="400" y2="650" stroke="#d1d5db" stroke-width="4"/>
+    <line x1="700" y1="150" x2="700" y2="650" stroke="#d1d5db" stroke-width="4"/>
+    
+    <text x="250" y="210" font-size="28" font-weight="bold" text-anchor="middle">Feature</text>
+    <text x="550" y="210" font-size="28" font-weight="bold" fill="#2563eb" text-anchor="middle">Averaging Filter</text>
+    <text x="850" y="210" font-size="28" font-weight="bold" fill="#dc2626" text-anchor="middle">Median Filter</text>
+    
+    <!-- Rows -->
+    <line x1="100" y1="350" x2="1000" y2="350" stroke="#e5e7eb" stroke-width="2"/>
+    <line x1="100" y1="450" x2="1000" y2="450" stroke="#e5e7eb" stroke-width="2"/>
+    <line x1="100" y1="550" x2="1000" y2="550" stroke="#e5e7eb" stroke-width="2"/>
+    
+    <text x="120" y="310" font-size="24" font-weight="bold">Best For</text>
+    <text x="420" y="310" font-size="20">Random / Gaussian Noise</text>
+    <text x="720" y="310" font-size="20">Impulse (Salt &amp; Pepper) Noise</text>
+    
+    <text x="120" y="410" font-size="24" font-weight="bold">Edge Preservation</text>
+    <text x="420" y="410" font-size="20" fill="#dc2626">Poor (Blurs edges heavily)</text>
+    <text x="720" y="410" font-size="20" fill="#16a34a">Excellent (Keeps sharp edges)</text>
+    
+    <text x="120" y="510" font-size="24" font-weight="bold">Computational Cost</text>
+    <text x="420" y="510" font-size="20" fill="#16a34a">Low (Simple addition)</text>
+    <text x="720" y="510" font-size="20" fill="#dc2626">High (Requires sorting pixels)</text>
+    
+    <text x="120" y="610" font-size="24" font-weight="bold">Mechanism</text>
+    <text x="420" y="610" font-size="20">Takes mean of neighbors</text>
+    <text x="720" y="610" font-size="20">Takes true median of neighbors</text>
+  </g>
+</svg>

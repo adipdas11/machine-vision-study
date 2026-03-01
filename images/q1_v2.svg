@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" style="background: white; font-family: sans-serif;">
+  <g transform="translate(100, 100)">
+    <text x="500" y="50" font-size="36" font-weight="bold" text-anchor="middle">Color Perception &amp; Mixing Theory</text>
+    
+    <!-- Cones -->
+    <text x="250" y="150" font-size="28" font-weight="bold" text-anchor="middle">1. Human Retina Cones</text>
+    <path d="M 50 400 Q 150 150 250 400" fill="none" stroke="blue" stroke-width="8"/>
+    <path d="M 150 400 Q 250 100 350 400" fill="none" stroke="green" stroke-width="8"/>
+    <path d="M 250 400 Q 350 120 450 400" fill="none" stroke="red" stroke-width="8"/>
+    <text x="150" y="270" fill="blue" font-size="24" font-weight="bold">S-Cones</text>
+    <text x="250" y="220" fill="green" font-size="24" font-weight="bold">M-Cones</text>
+    <text x="350" y="240" fill="red" font-size="24" font-weight="bold">L-Cones</text>
+    <text x="250" y="440" font-size="20" text-anchor="middle">Wavelength (nm)</text>
+    
+    <!-- Additive -->
+    <g transform="translate(550, 150)">
+      <text x="150" y="0" font-size="28" font-weight="bold" text-anchor="middle">2. Additive (Displays/Capture)</text>
+      <circle cx="100" cy="150" r="80" fill="red" style="mix-blend-mode: screen; opacity: 0.9;" />
+      <circle cx="200" cy="150" r="80" fill="#00ff00" style="mix-blend-mode: screen; opacity: 0.9;" />
+      <circle cx="150" cy="230" r="80" fill="blue" style="mix-blend-mode: screen; opacity: 0.9;" />
+      <text x="150" y="180" fill="black" font-size="20" font-weight="bold" text-anchor="middle">White</text>
+      <text x="150" y="270" font-size="20" text-anchor="middle">RGB Lights</text>
+    </g>
+    
+    <!-- Subtractive -->
+    <g transform="translate(550, 450)">
+      <text x="150" y="0" font-size="28" font-weight="bold" text-anchor="middle">3. Subtractive (Printing)</text>
+      <circle cx="100" cy="150" r="80" fill="cyan" style="mix-blend-mode: multiply; opacity: 0.9;" />
+      <circle cx="200" cy="150" r="80" fill="magenta" style="mix-blend-mode: multiply; opacity: 0.9;" />
+      <circle cx="150" cy="230" r="80" fill="yellow" style="mix-blend-mode: multiply; opacity: 0.9;" />
+      <text x="150" y="180" fill="black" font-size="20" font-weight="bold" text-anchor="middle">Black</text>
+      <text x="150" y="270" font-size="20" text-anchor="middle">CMY Inks</text>
+    </g>
+  </g>
+</svg>

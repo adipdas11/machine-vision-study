@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" style="background: white; font-family: sans-serif;">
+  <g transform="translate(100, 100)">
+    <text x="500" y="50" font-size="36" font-weight="bold" text-anchor="middle">Homogeneous Coordinates Advantage</text>
+    
+    <g transform="translate(50, 150)">
+      <text x="400" y="0" font-size="28" font-weight="bold" fill="#dc2626" text-anchor="middle">Cartesian Implementation (Messy &amp; Disjointed)</text>
+      <text x="400" y="50" font-size="24" font-family="math" text-anchor="middle">Translation requires addition: P' = P + T</text>
+      <text x="400" y="90" font-size="24" font-family="math" text-anchor="middle">Scaling requires multiplication: P' = S * P</text>
+    </g>
+    
+    <g transform="translate(50, 350)">
+      <text x="400" y="0" font-size="28" font-weight="bold" fill="#16a34a" text-anchor="middle">Homogeneous Coordinates (Unified)</text>
+      <text x="400" y="50" font-size="24" text-anchor="middle">By adding a "1" dimension, EVERYTHING is matrix multiplication!</text>
+      
+      <g transform="translate(100, 120)">
+        <text x="80" y="40" font-size="36" font-weight="bold">[ P' ]</text>
+        <text x="160" y="40" font-size="36" font-weight="bold">=</text>
+        <!-- Large Matrix -->
+        <rect x="200" y="-10" width="200" height="120" fill="#f3f4f6" stroke="#ca8a04" stroke-width="3" rx="10"/>
+        <text x="300" y="30" font-size="24" text-anchor="middle">[ Transformation  Tx ]</text>
+        <text x="300" y="60" font-size="24" text-anchor="middle">[ Matrix Space    Ty ]</text>
+        <text x="300" y="90" font-size="24" text-anchor="middle">[ 0      0        1  ]</text>
+        <text x="430" y="40" font-size="36" font-weight="bold">*</text>
+        <text x="490" y="40" font-size="36" font-weight="bold">[ P ]</text>
+      </g>
+    </g>
+    
+  </g>
+</svg>
