@@ -1,20 +1,42 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# Machine Vision B31MV Study Companion
 
-# Run and deploy your AI Studio app
+An interactive, responsive presentation application built for reviewing key questions and concepts for the Machine Vision (B31MV) course.
 
-This contains everything you need to run your app locally.
+This study companion organizes core concepts into 4 main themes:
 
-View your app in AI Studio: https://ai.studio/apps/9431e965-becb-4e45-85ef-3f528a7b36c9
+1. The Basics of Perception & Camera Models
+2. Image Processing & Filtering
+3. Feature Extraction & Matching
+4. Machine Learning in Vision
+
+## Access the App
+
+You can view the live deployed application here:
+**[Machine Vision B31MV Study Companion](https://adipdas11.github.io/machine-vision-study/)**
 
 ## Run Locally
 
-**Prerequisites:**  Node.js
+**Prerequisites:** Node.js
 
+1. Clone the repository and install dependencies:
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+   ```bash
+   npm install
+   ```
+
+2. Configure AI Models (Optional):
+   Set your `GEMINI_API_KEY` in `.env.local` to securely ping the Gemini API for any un-cached dynamic diagram generation (if needed in the future).
+
+3. Run the development server:
+   ```bash
+   npm run dev
+   ```
+
+## Automatic Deployment
+
+This project uses `gh-pages` for automated GitHub Pages hosting.
+To build the application and deploy updates to the live site, simply execute the following command:
+
+```bash
+npm run deploy
+```
